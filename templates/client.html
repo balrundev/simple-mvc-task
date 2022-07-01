@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2 class="title is-2">Информация</h2>
+<p><b>Фамилия, имя:</b> {{ client[1] }} {{ client[2] }}</p>
+<p><b>E-mail:</b> {{ client[3] }}</p>
+<p><b>Город:</b> {{ client[4] }}</p>
+<p><b>Почтовый индекс:</b> {{ client[5] }}</p>
+<p><b>Адрес:</b> {{ client[6] }}</p>
+{% endblock %}

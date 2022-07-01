@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2 class="title is-2">Регистрация на конференцию</h2>
+<table class="table">
+    <thead>
+        <th>№</th>
+        <th>Фамилия, имя</th>
+        <th>E-mail</th>
+        <th>Город</th>
+        <th>Почтовый индекс</th>
+        <th>Адрес</th>
+    </thead>
+    <tbody>
+        {% for client in clients %}
+        <tr>
+            <td>{{ loop.index }}</td>
+            <td>{{ client[0] }} {{ client[1] }}</td>
+            <td>{{ client[2] }}</td>
+            <td>{{ client[3] }}</td>
+            <td>{{ client[4] }}</td>
+            <td>{{ client[5] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
